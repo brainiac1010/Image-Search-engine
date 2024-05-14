@@ -8,7 +8,7 @@
 body {
     background: linear-gradient(135deg, #040404, #000000);
     color: #fff;
-
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
 h1 {
@@ -17,8 +17,8 @@ h1 {
     font-weight: 600;
     transition: transform 0.3s ease-in-out;
     transform-origin: center bottom;
+    will-change: transform; /* Optimize for transform changes */
 }
-
 
 h1:hover {
     transform: scale(1.1);
@@ -45,11 +45,9 @@ form input {
     color: #fff;
     font-size: 18px;
     padding: 0 30px;
-
 }
 
 form button {
-
     padding: 0 40px;
     height: 100%;
     background: #ff3929;
