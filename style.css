@@ -91,3 +91,36 @@ form button {
     object-fit: cover;
     border: 5px;
 }
+
+/* Media Queries for Poco M5 */
+@media (max-width: 1080px) {
+    h1 {
+        font-size: 1.5rem;
+        margin: 50px auto 30px;
+    }
+
+    form {
+        height: 60px;
+    }
+
+    form input {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    form button {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    #search-result {
+        width: 90%;
+        margin: 50px auto 30px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    #search-result img {
+        height: 200px;
+    }
+}
