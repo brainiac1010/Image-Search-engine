@@ -8,7 +8,8 @@
 body {
     background: linear-gradient(135deg, #040404, #000000);
     color: #fff;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    overflow-x: hidden;
+    /* Prevent horizontal scrollbar */
 }
 
 h1 {
@@ -17,7 +18,8 @@ h1 {
     font-weight: 600;
     transition: transform 0.3s ease-in-out;
     transform-origin: center bottom;
-    will-change: transform; /* Optimize for transform changes */
+    will-change: transform;
+    /* Optimize for transform changes */
 }
 
 h1:hover {
@@ -92,7 +94,7 @@ form button {
     border: 5px;
 }
 
-/* Media Queries for Poco M5 */
+
 @media (max-width: 1080px) {
     h1 {
         font-size: 1.5rem;
